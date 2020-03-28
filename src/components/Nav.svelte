@@ -46,10 +46,16 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
+	img{
+		width: 24px;
+		padding: 1em 0.5em;
+		display: block;
+	}
 </style>
 
 <nav>
 	<ul>
+		<li><img alt='logo' src='logo.png'></li>
 		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
 		<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
 	</ul>
