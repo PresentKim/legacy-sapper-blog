@@ -1,3 +1,16 @@
+<script context="module">
+export function preload({ params, query }) {
+	return this.fetch(`plugins.json`).then(r => r.json()).then(plugins => {
+		return { plugins };
+	});
+}
+</script>
+
+<script>
+	import PluginList from '../components/PluginList.svelte';
+	export let plugins;
+</script>
+
 <style>
 	h1{
 		text-align: center;
@@ -23,3 +36,5 @@
 </svelte:head>
 
 <h1>Make plugin for MC:BE server software</h1>
+
+<PluginList {plugins}/>
