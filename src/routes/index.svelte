@@ -7,7 +7,7 @@ export function preload({ params, query }) {
 </script>
 
 <script>
-	import PluginList from '../components/PluginList.svelte';
+	import PluginList from '../components/PluginList';
 	export let plugins;
 </script>
 

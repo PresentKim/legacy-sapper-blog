@@ -1,5 +1,5 @@
 <script>
-	import Plugin from './Plugin';
+	import PluginIcon from './PluginIcon';
 	export let plugins;
 
 	$: count = plugins.length;
@@ -16,6 +16,6 @@
 <p>This web page displays a list of Blugin plugins (<strong>{count}</strong> plugins loaded)</p>
 <div class="plugins">
 	{#each plugins as plugin}
-		<Plugin {...plugin} />
+		<PluginIcon {...plugin} />
 	{/each}
 </div>
