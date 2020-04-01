@@ -4,16 +4,15 @@
 	export let img;
 </script>
 
-<style>
+<style type="text/sass">
 	.plugin{
 		position: relative;
-		width: 320px;
-		height: 320px;
-		margin: 2.5em 0 0 2.5em;
+		width: 250px;
+		height: 250px;
+		margin: 20px 0 0 20px;
 		display: block;
 		padding: 0;
 		border: 0;
-		font-size: 100%;
 		font: inherit;
 	}
 	.plugin a{
@@ -27,16 +26,16 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		padding: 1em;
 		border-radius: 4px;
 		border-bottom: 0;
 		color: #ffffff;
+		font-size: 25px;
 		text-align: center;
 		text-decoration: none;
 		z-index: 3;
 	}
 	.plugin .image:before {
-		background-color: #f2849e;
+		background-color: #333333AA;
 		pointer-events: none;
 		transition: background-color 0.5s ease, opacity 0.5s ease;
 		content: '';
@@ -48,19 +47,14 @@
 		height: 100%;
 		opacity: 1.0;
 		z-index: 1;
-		opacity: 0.8;
 	}
 	.plugin:hover .image:before {
-		background-color: #333333;
-		opacity: 0.35;
+		background-color: #33333333;
 	}
-	.plugin .image {
-	    display: block;
-    	width: 100%;
-    	height: 100%;
+	.plugin:hover {
+    	text-shadow: 0 0 10px white, 0 0 20px black, 0 0 30px black, 0 0 70px black;
 	}
-	.plugin .image img {
-	    display: block;
+	.plugin .image, .plugin .image img {
     	width: 100%;
     	height: 100%;
 	}
@@ -68,7 +62,5 @@
 
 <div class="plugin">
 	<span class="image"><img alt="{fullname} icon" src={img} /></span>
-	<a href="./plugins/{name}">
-		<h2>{name}</h2>
-	</a>
+	<a href="./plugins/{name}"> {name} </a>
 </div>

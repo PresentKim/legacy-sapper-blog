@@ -9,7 +9,9 @@
 	.plugins{
 		display: flex;
 		flex-wrap: wrap;
-		margin: -2.5em 0 0 -2.5em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>
 
