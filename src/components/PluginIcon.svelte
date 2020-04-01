@@ -1,7 +1,6 @@
 <script>
 	export let name;
 	export let fullname;
-	export let description;
 	export let img;
 </script>
 
@@ -71,6 +70,5 @@
 	<span class="image"><img alt="{fullname} icon" src={img} /></span>
 	<a href="./plugins/{name}">
 		<h2>{name}</h2>
-		<h2>{description}</h2>
 	</a>
 </div>

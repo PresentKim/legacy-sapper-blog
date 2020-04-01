@@ -28,7 +28,6 @@ orgs.forEach(org => {
             orgName: org.name,
             name: plugin.replace('-PMMP', ''),
             fullname: plugin,
-            description: 'Pre-data for test this site',
             img: `https://rawgit.com/PresentKim/SVG-files/master/plugin-icons/${plugin.replace('-PMMP', '').toLowerCase()}.svg`
         });
     });
