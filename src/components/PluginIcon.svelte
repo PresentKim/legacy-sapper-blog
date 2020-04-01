@@ -1,7 +1,6 @@
 <script>
 	export let name;
 	export let fullname;
-	export let repo;
 	export let description;
 	export let img;
 </script>
@@ -70,7 +69,7 @@
 
 <div class="plugin">
 	<span class="image"><img alt="{fullname} icon" src={img} /></span>
-	<a href="{repo}">
+	<a href="./plugins/{name}">
 		<h2>{name}</h2>
 		<h2>{description}</h2>
 	</a>

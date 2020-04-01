@@ -25,9 +25,9 @@ let plugins = [];
 orgs.forEach(org => {
     org.plugins.forEach(plugin => {
         plugins.push({
+            orgName: org.name,
             name: plugin.replace('-PMMP', ''),
             fullname: plugin,
-            repo: `${org.url}/${plugin}`,
             description: 'Pre-data for test this site',
             img: `https://rawgit.com/PresentKim/SVG-files/master/plugin-icons/${plugin.replace('-PMMP', '').toLowerCase()}.svg`
         });
