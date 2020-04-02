@@ -1,6 +1,16 @@
 <html>
-  <meta http-equiv="refresh"/>
+  <meta http-equiv="refresh" />
   <script>
-    document.querySelector('meta').setAttribute('content', '0; url=' + location.protocol + '//' + location.host + '?redirect=' + encodeURI(location.pathname.substr(1) + location.search));
+    document
+      .querySelector("meta")
+      .setAttribute(
+        "content",
+        "0; url=" +
+          location.protocol +
+          "//" +
+          location.host +
+          "?redirect=" +
+          encodeURI(location.pathname.substr(1) + location.search)
+      );
   </script>
 </html>
