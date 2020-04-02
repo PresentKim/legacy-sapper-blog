@@ -12,7 +12,7 @@
 </script>
 
 <script>
-  import PluginDescription from "../../components/PluginDescription";
+  import PluginDescription from "../../components/PluginDescription.svelte";
   export let plugin;
 </script>
 

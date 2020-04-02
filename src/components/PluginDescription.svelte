@@ -3,7 +3,7 @@
   export let fullname;
 
   import { onMount } from "svelte";
-  import marked from "marked";
+  const marked = require("marked");
   let non = [];
   onMount(() => {
     loadReadme();

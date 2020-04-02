@@ -1,5 +1,5 @@
 <script>
-  import PluginIcon from "./PluginIcon";
+  import PluginIcon from "./PluginIcon.svelte";
   export let plugins;
 
   $: count = plugins.length;

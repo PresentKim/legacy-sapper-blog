@@ -9,7 +9,7 @@
 </script>
 
 <script>
-  import PluginList from "../components/PluginList";
+  import PluginList from "../components/PluginList.svelte";
   export let plugins;
 </script>
 
